@@ -1,0 +1,1 @@
+java -jar nand2tetris.jar "$1"

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="nand2tetris:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/nand2tetris_jar</output-path>
+    <root id="archive" name="nand2tetris.jar">
+      <element id="module-output" name="nand2tetris" />
+    </root>
+  </artifact>
+</component>
