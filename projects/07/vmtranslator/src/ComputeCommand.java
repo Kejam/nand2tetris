@@ -12,15 +12,16 @@ public class ComputeCommand implements Command{
 
     @Override
     public String translate() {
-        if ("add".equalsIgnoreCase(command)) return add();
-        if ("eq".equalsIgnoreCase(command)) return eq();
-        if ("or".equalsIgnoreCase(command)) return or();
-        if ("and".equalsIgnoreCase(command)) return and();
-        if ("not".equalsIgnoreCase(command)) return not();
-        if ("neg".equalsIgnoreCase(command)) return neg();
-        if ("sub".equalsIgnoreCase(command)) return sub();
-        if ("lt".equalsIgnoreCase(command)) return lt();
-        if ("gt".equalsIgnoreCase(command)) return gt();
+        final String clearCommand = command.replace(" ", "");
+        if ("add".equalsIgnoreCase(clearCommand)) return add();
+        if ("eq".equalsIgnoreCase(clearCommand)) return eq();
+        if ("or".equalsIgnoreCase(clearCommand)) return or();
+        if ("and".equalsIgnoreCase(clearCommand)) return and();
+        if ("not".equalsIgnoreCase(clearCommand)) return not();
+        if ("neg".equalsIgnoreCase(clearCommand)) return neg();
+        if ("sub".equalsIgnoreCase(clearCommand)) return sub();
+        if ("lt".equalsIgnoreCase(clearCommand)) return lt();
+        if ("gt".equalsIgnoreCase(clearCommand)) return gt();
         throw new IllegalArgumentException("Unknown compute command");
     }
 
